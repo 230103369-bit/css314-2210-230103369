@@ -1,0 +1,14 @@
+Student ID: 230103369
+Items: 1000
+Workers: 4
+Workload: sleep(0.0001 * (i % 20))
+Dynamic chunk size: 5
+
+Scheduling Under Skew
+-----------------------------------------------------------------
+Strategy        Wall Time (ms)    Completion Delta (ms)
+-----------------------------------------------------------------
+Static                 300.347                   13.815
+Dynamic                299.354                   10.522
+
+Dynamic vs Static speedup: 1.003x
