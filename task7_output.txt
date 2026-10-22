@@ -1,0 +1,29 @@
+Student ID: 230103369
+Array size: 30000000
+Data type: float64
+Available logical cores: 8
+Worker counts: [1, 2, 8]
+Timing statistic: median of 5 runs
+
+Kernel A - Memory-Bound Vector Copy
+Cores | Wall Time (ms) | Speedup | Efficiency
+------|----------------|---------|-----------
+    1 |          6.422 |   1.000 |     1.000
+    2 |          6.267 |   1.025 |     0.512
+    8 |          6.844 |   0.938 |     0.117
+
+Kernel B - Compute-Bound Trigonometric
+Cores | Wall Time (ms) | Speedup | Efficiency
+------|----------------|---------|-----------
+    1 |        393.079 |   1.000 |     1.000
+    2 |        207.515 |   1.894 |     0.947
+    8 |         88.549 |   4.439 |     0.555
+
+Scaling Analysis
+-------------------------------------------------------
+Kernel A efficiency at 8 cores: 0.117
+Kernel B efficiency at 8 cores: 0.555
+
+Memory channel saturation: Kernel A (Memory-Bound) stalled more in scaling.
+
+Result verification: PASSED
