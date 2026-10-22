@@ -1,0 +1,11 @@
+Student ID: 230103369
+OS: Darwin 25.6.0
+Platform: macOS-26.6.2-arm64-arm-64bit-Mach-O
+CPU/Processor: arm
+Logical cores: 8
+Array size: 20000000
+Data type: float64
+Seed: 230103369
+Sum: 9999501.8109873869
+Standard deviation: 0.2887041580
+Execution time: 2955.115 ms
