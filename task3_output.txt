@@ -1,0 +1,15 @@
+Student ID: 230103369
+CPU: Apple M2
+Architecture: arm64
+Physical cores / workers: 8
+Increments per worker: 50000000
+
+False Sharing Benchmark
+---------------------------------------------
+Unpadded Shared: 195.774 ms
+Padded/Local:    33.537 ms
+Execution ratio: 5.838x
+
+Expected count per worker: 50000000
+Unpadded result correct: True
+Local result correct:    True
