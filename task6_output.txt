@@ -1,0 +1,26 @@
+Student ID: 230103369
+Threads: 4
+Increments per thread: 2000000
+Expected final value: 8000000
+
+Unsafe trial 1: actual=2208747, lost=72.391%, time=3.966 ms
+Unsafe trial 2: actual=2253182, lost=71.835%, time=4.703 ms
+Unsafe trial 3: actual=2124253, lost=73.447%, time=3.884 ms
+Unsafe trial 4: actual=2223298, lost=72.209%, time=3.510 ms
+Unsafe trial 5: actual=2080823, lost=73.990%, time=3.278 ms
+
+Race Condition Summary
+---------------------------------------------
+Expected final value: 8000000
+Actual final value:   2080823
+Updates lost:         5919177
+Percentage lost:      73.990%
+
+Synchronized Version
+---------------------------------------------
+Final value with lock: 8000000
+Correct result: True
+Unsafe wall time: 3.278 ms
+Locked wall time: 144.592 ms
+Synchronization penalty: 141.314 ms
+Synchronization slowdown: 44.110x
