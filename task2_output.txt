@@ -1,0 +1,16 @@
+Student ID: 230103369
+Logical cores: 8
+Array size: 20000000
+Data type: float64
+Seed: 230103369
+Parallel fraction P: 0.95
+
+Cores   Wall Time (ms)    Speedup     Amdahl Upper Bound  
+----------------------------------------------------------
+1       1066.567          1.000       1.000               
+2       815.919           1.307       1.905               
+4       450.336           2.368       3.478               
+8       427.135           2.497       5.926               
+16      632.140           1.687       9.143               
+
+Reference sum: 9999501.8109873869
