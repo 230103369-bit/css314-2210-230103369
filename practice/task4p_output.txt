@@ -1,0 +1,15 @@
+Student ID: 230103369
+Data type: float64
+Timing statistic: median of 5 runs
+
+IPC Memory Transfer Profile
+------------------------------------------------------------------------
+N          | Array Size (MB) | Path A Pipe (ms) | Path B Shared Memory (ms) | A/B Ratio
+-----------|-----------------|------------------|---------------------------|----------
+    100000 |           0.763 |            1.562 |                     0.052 |   30.156x
+   1000000 |           7.629 |            7.445 |                     0.068 |  108.747x
+  10000000 |          76.294 |           91.816 |                     0.081 | 1131.219x
+
+Path A: Pipe IPC serialization / copy
+Path B: Zero-copy shared-memory access
+Result verification: PASSED
