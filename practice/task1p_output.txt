@@ -1,0 +1,16 @@
+Student ID: 230103369
+Matrix size: 8000 x 8000
+Data type: float64
+Logical core count: 8
+Physical cores / worker threads: 8
+Timing statistic: median of 5 runs
+
+Parallel Cache Traversal
+-------------------------------------------------------
+Mode A - Row-Major:            12.593 ms
+Mode B - Column-Major/Strided: 62.286 ms
+Cache penalty factor:          4.946x
+
+Mode A sum: 31999727.8439937010
+Mode B sum: 31999727.8439936787
+Result verification: PASSED
