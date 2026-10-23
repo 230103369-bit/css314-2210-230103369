@@ -1,0 +1,27 @@
+Student ID: 230103369
+Total sample points: 40000000
+Threads: 4
+Samples per thread: 10000000
+Platform: Darwin arm64
+
+Monte Carlo Pi Estimation
+------------------------------------------------------------
+Shared PRNG (mutex protected)
+Computed pi:    3.1416762000
+Absolute error: 0.0000835464
+Wall time:      698.022 ms
+
+Independent PRNG (per-thread state)
+Computed pi:    3.1411464000
+Absolute error: 0.0004462536
+Wall time:      40.768 ms
+
+PRNG state isolation speedup: 17.122x
+
+Independent thread seeds:
+Thread 0: 2301033690
+Thread 1: 2301033691
+Thread 2: 2301033692
+Thread 3: 2301033693
+
+Result verification: PASSED
