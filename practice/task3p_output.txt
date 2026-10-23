@@ -1,0 +1,15 @@
+Student ID: 230103369
+Array size: 2000000
+Input values: integers 1 to 10
+Logical core count: 8
+Parallel workers: 8
+Timing statistic: median of 5 runs
+
+Parallel Prefix Scan
+-----------------------------------------------------------------
+Serial Time (ms) | Parallel Time (ms) | Speedup | Verification Status
+-----------------|--------------------|---------|--------------------
+           1.647 |              1.180 |   1.396x | PASS
+
+Serial final prefix sum:   10998750
+Parallel final prefix sum: 10998750
